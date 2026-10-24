@@ -1,0 +1,50 @@
+# Git Ignore Rules for Portfolio Fajri
+
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Testing & Coverage
+coverage/
+
+# Next.js build output
+.next/
+out/
+build/
+dist/
+
+# Raw Inputs & Private Assets (DO NOT publish or commit to public git)
+inputs/
+!inputs/content.md.template
+
+# Local backups
+backups/
+*.bak
+
+# Environment variables (NEVER commit local secrets)
+.env
+.env*.local
+!.env.example
+
+# Debug and system logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE & Editor folders
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
